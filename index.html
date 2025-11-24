@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishiv Agarwal | AI Researcher & Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero Section */
+        header {
+            padding: 8rem 10% 6rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1.1; }
+        .subtitle { font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 2rem; }
+        
+        .social-btn {
+            display: inline-block;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-right: 1rem;
+            transition: all 0.3s;
+            border: 1px solid #334155;
+        }
+        .social-btn:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+        /* Sections */
+        section { padding: 4rem 10%; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 2rem; margin-bottom: 2rem; border-left: 5px solid var(--accent); padding-left: 1rem; }
+
+        /* Cards Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        
+        .card h3 { color: var(--accent); margin-bottom: 0.5rem; }
+        .card-date { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; display: block; }
+        .tags { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .tag {
+            background: #334155;
+            color: var(--accent);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Research/Publications Specific */
+        .publication-card { margin-bottom: 2rem; background: var(--card-bg); padding: 2rem; border-radius: 12px; border-left: 4px solid var(--accent); }
+        .pub-title { font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .pub-conf { color: var(--accent); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .pub-links { margin-top: 1rem; }
+        .pub-links a { color: var(--text-secondary); font-size: 0.9rem; margin-right: 1.5rem; text-decoration: none; }
+        .pub-links a:hover { color: var(--accent); text-decoration: underline; }
+
+        /* Skills */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .skill-item { background: var(--card-bg); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid #334155; }
+
+        /* Footer */
+        footer { text-align: center; padding: 4rem 0; color: var(--text-secondary); font-size: 0.9rem; margin-top: 4rem; border-top: 1px solid #334155; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            nav { flex-direction: column; gap: 1rem; }
+            .nav-links a { margin: 0 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">KA.</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Krishiv Agarwal</h1>
+        <p class="subtitle">AI Researcher & Software Engineer specializing in LLM Safety, Interpretability, and Robotics.</p>
+        <div>
+            <a href="https://github.com/Kraga922/" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/krishiv-agarwal/" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://openreview.net/forum?id=A41hwlkhpn" class="social-btn"><i class="fas fa-book-open"></i> OpenReview</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science undergraduate at the <strong>University of Florida</strong> (GPA 3.9/4.0) with a passion for uncovering the internal mechanisms of Large Language Models and building autonomous systems. Currently, I am an <strong>LLM Researcher at SRI International</strong>, where I work on activation steering, jailbreaking methodologies, and safety auditing for foundation models.</p>
+        <br>
+        <div class="skills-container">
+            <span class="skill-item">Python (PyTorch, TensorFlow)</span>
+            <span class="skill-item">LLM Interpretability</span>
+            <span class="skill-item">Reinforcement Learning (PPO)</span>
+            <span class="skill-item">ROS 2 & Robotics</span>
+            <span class="skill-item">AWS & MLOps</span>
+            <span class="skill-item">C++</span>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Selected Publications & Research</h2>
+        
+        <div class="publication-card">
+            <div class="pub-conf">NeurIPS 2021 Workshop</div>
+            <div class="pub-title">AI-driven Design of Novel Vehicles Using Reinforcement Learning</div>
+            <p>Developed a designer using reinforcement learning that synthesizes novel vehicle designs. Focused on discovering novel vehicle designs suitable for new environments using Webots for high-fidelity physics simulation.</p>
+            <div class="pub-links">
+                <a href="#"><i class="fas fa-file-pdf"></i> View Paper</a>
+                <a href="#"><i class="fas fa-code"></i> Code</a>
+            </div>
+        </div>
+
+        <div class="publication-card">
+            <div class="pub-conf">Working Paper / Preprint</div>
+            <div class="pub-title">Breaking Bad: Interpretability-Based Safety Audits of State-of-the-Art LLMs</div>
+            <p>Presented a comprehensive, interpretability-driven jailbreaking audit of eight SOTA open-source LLMs (Llama-3, GPT-oss, Qwen, Phi). Introduced an adaptive two-stage grid search algorithm to identify optimal activation-steering coefficients for unsafe behavioral concepts.</p>
+            <div class="pub-links">
+                <a href="#"><i class="fas fa-file-pdf"></i> View Paper</a>
+            </div>
+        </div>
+
+        <div class="publication-card">
+            <div class="pub-conf">ICCPS Submission</div>
+            <div class="pub-title">From Actions to Understanding: Conformal Interpretability of Temporal Concepts in LLM Agents</div>
+            <p>Proposed a framework for interpreting the temporal evolution of concepts in LLM agents through a step-wise conformal lens. Demonstrated that temporal concepts are linearly separable and aligned with task success in environments like ScienceWorld and AlfWorld.</p>
+            <div class="pub-links">
+                <a href="#"><i class="fas fa-file-pdf"></i> View Paper</a>
+            </div>
+        </div>
+
+        <div class="publication-card">
+            <div class="pub-conf">Design Society 2026</div>
+            <div class="pub-title">Generating Vehicle Designs Using Probabilistic Programs and Reinforcement Learning</div>
+            <p>Introduced FORGE, a framework facilitating design generation using probabilistic programming. Combined symbolic, declarative approaches with neural-based approaches to generate large datasets of designs and refine design distributions.</p>
+            <div class="pub-links">
+                <a href="#"><i class="fas fa-file-pdf"></i> View Paper</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>LLM Researcher</h3>
+                <span class="card-date">SRI International | May 2025 – Present</span>
+                <p>First author on NeurIPS publication on interpretability. Innovated dual-vector jailbreaking combining activation steering and token injection. Achieved 10,000+ white-hat jailbreaks across Llama and GPT families.</p>
+                <div class="tags">
+                    <span class="tag">LLM Safety</span>
+                    <span class="tag">Jailbreaking</span>
+                    <span class="tag">Activation Steering</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Software Lead</h3>
+                <span class="card-date">Dream Team Engineering | Jan 2025 – Present</span>
+                <p>Developed CI/CD MLOps pipeline using AWS SageMaker/S3/EC2 for blood pressure prediction from wearable sensors. Led a team of 4 designing end-to-end smartwatch hardware/software.</p>
+                <div class="tags">
+                    <span class="tag">AWS</span>
+                    <span class="tag">MLOps</span>
+                    <span class="tag">IoT</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AI & Robotics Developer</h3>
+                <span class="card-date">SRI International | May 2024 – Aug 2024</span>
+                <p>Engineered procedural generation in NVIDIA Omniverse for Isaac Sim. Designed ROS2 Visual SLAM pipelines for navigation with 95%+ accuracy.</p>
+                <div class="tags">
+                    <span class="tag">NVIDIA Omniverse</span>
+                    <span class="tag">ROS 2</span>
+                    <span class="tag">Visual SLAM</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AI Research Intern</h3>
+                <span class="card-date">SRI International | May 2023 – Nov 2023</span>
+                <p>Designed RL system using PPO to generate 10,000+ autonomous ground vehicle CAD designs. Recognized as first-named author on published research.</p>
+                <div class="tags">
+                    <span class="tag">Reinforcement Learning</span>
+                    <span class="tag">PPO</span>
+                    <span class="tag">CAD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Autonomous Robotic Object Retriever</h3>
+                <p>Architected a ROS 2 system for TurtleBot 4 to perform frontier navigation and SLAM. Integrated a computer vision pipeline with an LLM for natural language task requests.</p>
+                <div class="tags">
+                    <span class="tag">ROS 2</span>
+                    <span class="tag">LLM</span>
+                    <span class="tag">OpenCV</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>GatorAID (AI Physical Therapist)</h3>
+                <p>Founder & CEO. Won UF’s hackathon with an AI-powered physical therapy platform using computer vision/pose estimation for rehab guidance.</p>
+                <div class="tags">
+                    <span class="tag">Startup</span>
+                    <span class="tag">MediaPipe</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Monkeypox Classifier</h3>
+                <p>Engineered a deep CNN achieving 93% diagnostic accuracy. Designed extensive CV pipelines for medical image segmentation and augmentation.</p>
+                <div class="tags">
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">CNN</span>
+                    <span class="tag">Keras/TensorFlow</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Swamped (Party Safety App)</h3>
+                <p>Led development of a real-time alcohol tracking app using React Native and Supabase. Won SwampHacks and advanced to startup competition finals.</p>
+                <div class="tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">Product Mgmt</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Krishiv Agarwal. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
